@@ -1,0 +1,6 @@
+framework module Pods_ChowkidarTests {
+  umbrella header "Pods-ChowkidarTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

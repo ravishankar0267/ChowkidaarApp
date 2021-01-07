@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeNavigationBarView" customModule="Chowkidar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-cb-vuu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification_background" translatesAutoresizingMaskIntoConstraints="NO" id="lFF-yK-4A9">
+                            <rect key="frame" x="0.0" y="-45" width="414" height="102"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wj2-aJ-zmp">
+                            <rect key="frame" x="362" y="5" width="47" height="47"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wj2-aJ-zmp" secondAttribute="height" multiplier="1:1" id="JsS-rd-M2O"/>
+                            </constraints>
+                            <state key="normal" image="bell_icon"/>
+                            <connections>
+                                <action selector="notificationButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="P2Q-T3-pWD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUe-E3-1c5">
+                            <rect key="frame" x="5" y="5" width="47" height="47"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rUe-E3-1c5" secondAttribute="height" multiplier="1:1" id="tGL-n4-C8s"/>
+                            </constraints>
+                            <state key="normal" image="menu"/>
+                            <connections>
+                                <action selector="menuButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="brT-JP-uxW"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification_image" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-n8-bv7">
+                            <rect key="frame" x="64" y="5" width="286" height="47"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6L-vF-nHi">
+                            <rect key="frame" x="57" y="5" width="2" height="47"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="pYO-lO-8OC"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-km-aaE">
+                            <rect key="frame" x="355" y="5" width="2" height="47"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="N09-eh-t9S"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="M6L-vF-nHi" firstAttribute="leading" secondItem="rUe-E3-1c5" secondAttribute="trailing" constant="5" id="2vG-Nt-MbD"/>
+                        <constraint firstItem="rUe-E3-1c5" firstAttribute="leading" secondItem="IRL-cb-vuu" secondAttribute="leading" constant="5" id="3fg-bY-zNy"/>
+                        <constraint firstItem="rUe-E3-1c5" firstAttribute="top" secondItem="IRL-cb-vuu" secondAttribute="top" constant="5" id="4Uw-Tf-aow"/>
+                        <constraint firstItem="Rm3-km-aaE" firstAttribute="leading" secondItem="ahF-n8-bv7" secondAttribute="trailing" constant="5" id="5Ha-5S-OMQ"/>
+                        <constraint firstItem="M6L-vF-nHi" firstAttribute="top" secondItem="IRL-cb-vuu" secondAttribute="top" constant="5" id="9lb-wn-1uH"/>
+                        <constraint firstItem="lFF-yK-4A9" firstAttribute="top" secondItem="IRL-cb-vuu" secondAttribute="top" constant="-45" id="Lmy-33-P0T"/>
+                        <constraint firstItem="ahF-n8-bv7" firstAttribute="leading" secondItem="M6L-vF-nHi" secondAttribute="trailing" constant="5" id="ONc-pQ-D3m"/>
+                        <constraint firstItem="wj2-aJ-zmp" firstAttribute="leading" secondItem="Rm3-km-aaE" secondAttribute="trailing" constant="5" id="Sk8-74-YrY"/>
+                        <constraint firstItem="wj2-aJ-zmp" firstAttribute="top" secondItem="IRL-cb-vuu" secondAttribute="top" constant="5" id="TRj-h2-x2m"/>
+                        <constraint firstAttribute="bottom" secondItem="wj2-aJ-zmp" secondAttribute="bottom" constant="5" id="VRv-53-01S"/>
+                        <constraint firstItem="lFF-yK-4A9" firstAttribute="leading" secondItem="IRL-cb-vuu" secondAttribute="leading" id="Z1v-Da-Rwm"/>
+                        <constraint firstItem="Rm3-km-aaE" firstAttribute="top" secondItem="IRL-cb-vuu" secondAttribute="top" constant="5" id="kSa-8l-f43"/>
+                        <constraint firstAttribute="bottom" secondItem="Rm3-km-aaE" secondAttribute="bottom" constant="5" id="lbw-DL-Rla"/>
+                        <constraint firstAttribute="bottom" secondItem="lFF-yK-4A9" secondAttribute="bottom" id="mxL-uD-WCe"/>
+                        <constraint firstAttribute="trailing" secondItem="wj2-aJ-zmp" secondAttribute="trailing" constant="5" id="o8V-Y6-0Gn"/>
+                        <constraint firstAttribute="bottom" secondItem="M6L-vF-nHi" secondAttribute="bottom" constant="5" id="oix-cz-O9r"/>
+                        <constraint firstAttribute="bottom" secondItem="ahF-n8-bv7" secondAttribute="bottom" constant="5" id="r5o-j0-xbC"/>
+                        <constraint firstAttribute="bottom" secondItem="rUe-E3-1c5" secondAttribute="bottom" constant="5" id="uqa-Yv-M2P"/>
+                        <constraint firstAttribute="trailing" secondItem="lFF-yK-4A9" secondAttribute="trailing" id="wnH-9n-GLg"/>
+                        <constraint firstItem="ahF-n8-bv7" firstAttribute="top" secondItem="IRL-cb-vuu" secondAttribute="top" constant="5" id="y59-0Q-UkI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IRL-cb-vuu" secondAttribute="trailing" id="7Zu-FP-SZ1"/>
+                <constraint firstItem="IRL-cb-vuu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CBB-hE-I4t"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IRL-cb-vuu" secondAttribute="bottom" id="nLP-Nl-kgW"/>
+                <constraint firstItem="IRL-cb-vuu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oLG-b1-yhM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="aMenuButton" destination="rUe-E3-1c5" id="fyb-ld-HC0"/>
+                <outlet property="aNotificationButton" destination="wj2-aJ-zmp" id="IFK-TC-zhA"/>
+            </connections>
+            <point key="canvasLocation" x="136.875" y="420.95070422535213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bell_icon" width="15.5" height="15.5"/>
+        <image name="menu" width="13.333333015441895" height="8.3333330154418945"/>
+        <image name="notification_background" width="140.66667175292969" height="20.666666030883789"/>
+        <image name="notification_image" width="150" height="34.666667938232422"/>
+    </resources>
+</document>
