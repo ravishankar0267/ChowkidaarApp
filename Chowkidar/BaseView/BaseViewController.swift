@@ -60,7 +60,7 @@ class BaseViewController: UIViewController {
     func setupDefaultNavigationBar () {
         self.navigationController?.isNavigationBarHidden = false
         navigationItem.setHidesBackButton(true, animated: false)
-        navigationController?.navigationItem.hidesBackButton = true
+        //navigationController?.navigationItem.hidesBackButton = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "NavigationBarImage.png")?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true

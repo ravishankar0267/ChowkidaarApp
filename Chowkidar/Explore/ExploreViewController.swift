@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExploreViewController: ViewController {
+class ExploreViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +17,12 @@ class ExploreViewController: ViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //addNavigationBar(navigationTitle: "Explore")
+        addNavigationBar(navigationTitle: "Explore")
        // getProfileData()
+    }
+    
+    override func handleBackButtonAction() {
+        self.navigationController?.popViewController(animated: true)
     }
     
 

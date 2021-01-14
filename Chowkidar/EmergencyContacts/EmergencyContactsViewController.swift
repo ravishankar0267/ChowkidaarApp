@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmergencyContactsViewController: ViewController {
+class EmergencyContactsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +19,12 @@ class EmergencyContactsViewController: ViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-     //   addNavigationBar(navigationTitle: "Emergency contacts")
+        addNavigationBar(navigationTitle: "Emergency contacts")
        // getProfileData()
+    }
+    
+    override func handleBackButtonAction() {
+        self.navigationController?.popViewController(animated: true)
     }
     
 

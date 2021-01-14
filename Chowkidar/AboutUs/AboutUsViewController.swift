@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutUsViewController: ViewController {
+class AboutUsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +18,12 @@ class AboutUsViewController: ViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       // addNavigationBar(navigationTitle: "About us")
+        addNavigationBar(navigationTitle: "About us")
        // getProfileData()
+    }
+    
+    override func handleBackButtonAction() {
+        self.navigationController?.popViewController(animated: true)
     }
     
 

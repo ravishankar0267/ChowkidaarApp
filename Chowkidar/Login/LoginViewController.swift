@@ -26,7 +26,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
-        //addNavigationBar(navigationTitle: "CODE VERIFICATION")
+        aLoginTextField.text = "8147912838"
     }
     
     func setupUI() {
@@ -69,12 +69,14 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     
     func sendOTPWithMobileNo()  {
+        
+        self.performSegue(withIdentifier: "loginToOtp", sender: nil)
         if let mobileNumber = aLoginTextField.text {
             if Validation.isNotEmpty(textField: aLoginTextField) {
                 if Validation.isValid(mobileNo: mobileNumber) {
-                    NetworkManager.post_Request(urlService: <#T##String#>, param: <#T##[String : Any]?#>, head: nil, responseType: loginDataModel.self) { (<#Any?#>) in
-                        <#code#>
-                    }
+//                    NetworkManager.post_Request(urlService: <#T##String#>, param: <#T##[String : Any]?#>, head: nil, responseType: loginDataModel.self) { (<#Any?#>) in
+//                        <#code#>
+//                    }
                     
 //                    //self.performSegue(withIdentifier: "loginToOtp", sender: nil)
 //                    NetworkManager.generateURLWithQueryParam(baseURL: kBASE_URL, componentURL: URL_SendSMS, queryItems: [URLQueryItem.init(name: "mobile", value: mobileNumber)]) { (responseURL) in

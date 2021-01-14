@@ -18,6 +18,7 @@ class OTPViewController: BaseViewController, UITextFieldDelegate  {
     @IBOutlet weak var aOTPTextfield3: UITextField!
     @IBOutlet weak var aOTPTextfield4: UITextField!
     
+    @IBOutlet weak var aBackButton: UIButton!
     var mobileNumber = ""
 
     override func viewDidLoad() {
@@ -27,19 +28,10 @@ class OTPViewController: BaseViewController, UITextFieldDelegate  {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
-       
-        //addNavigationBar(navigationTitle: "CODE VERIFICATION")
-        let backImage = UIImage(named: "backButton")
-
-        self.navigationController?.navigationBar.backIndicatorImage = backImage
-
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
-        //self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -47,6 +39,9 @@ class OTPViewController: BaseViewController, UITextFieldDelegate  {
         self.view.endEditing(true)
     }
     
+    @IBAction func backButtonAction(_ sender: Any) {
+        handleBackButtonAction()
+    }
     override func handleBackButtonAction() {
         self.navigationController?.popViewController(animated: true)
     }
@@ -56,17 +51,10 @@ class OTPViewController: BaseViewController, UITextFieldDelegate  {
         aOTPTextfield2.addBottomBorder()
         aOTPTextfield3.addBottomBorder()
         aOTPTextfield4.addBottomBorder()
-//        aOTPTextfield1.delegate = self
-//        aOTPTextfield2.delegate = self
-//        aOTPTextfield3.delegate = self
-//        aOTPTextfield4.delegate = self
-        
         aOTPTextfield1.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         aOTPTextfield2.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         aOTPTextfield3.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         aOTPTextfield4.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
-        
-     
         aLoginButton.setCornerRadiusButton(value: 10)
         aLoginButton.setBorder(color: .white, size: 1)
     }
@@ -128,7 +116,7 @@ class OTPViewController: BaseViewController, UITextFieldDelegate  {
                 aOTPTextfield4.becomeFirstResponder()
             case aOTPTextfield4:
                 aOTPTextfield1.resignFirstResponder()
-                //submitOTP()
+                submitOTP()
             default:
                 break
             }
