@@ -25,6 +25,22 @@
 		3C339E95259390D200F80315 /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C339E83259390D200F80315 /* WorkSans-LightItalic.ttf */; };
 		3C339E96259390D200F80315 /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C339E84259390D200F80315 /* WorkSans-ExtraBoldItalic.ttf */; };
 		3C339E97259390D200F80315 /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C339E85259390D200F80315 /* WorkSans-Bold.ttf */; };
+		3C5FD09125C3422D00E87831 /* MyFlatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FD09025C3422D00E87831 /* MyFlatsViewController.swift */; };
+		3C5FD09425C5870000E87831 /* MyFlatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FD09225C5870000E87831 /* MyFlatsTableViewCell.swift */; };
+		3C5FD09525C5870000E87831 /* MyFlatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FD09325C5870000E87831 /* MyFlatsTableViewCell.xib */; };
+		3C5FD09825C5ED5B00E87831 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FD09725C5ED5B00E87831 /* ServicesViewController.swift */; };
+		3C5FD09B25C5F00D00E87831 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FD09925C5F00D00E87831 /* ServicesTableViewCell.swift */; };
+		3C5FD09C25C5F00D00E87831 /* ServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FD09A25C5F00D00E87831 /* ServicesTableViewCell.xib */; };
+		3C6173D325C717D6005B8AD3 /* ServiceSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6173D225C717D6005B8AD3 /* ServiceSettingView.swift */; };
+		3C6173D825C717F9005B8AD3 /* ServiceSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6173D725C717F9005B8AD3 /* ServiceSettingView.xib */; };
+		3C739EAA25CB24BA00B325CA /* MaintenanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C739EA925CB24BA00B325CA /* MaintenanceDetailViewController.swift */; };
+		3C739EAF25CC6EB600B325CA /* PaymentSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C739EAE25CC6EB600B325CA /* PaymentSuccessView.swift */; };
+		3C739EB425CC6ED000B325CA /* PaymentSuccessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C739EB325CC6ED000B325CA /* PaymentSuccessView.xib */; };
+		3C78EBF425C9D19E009A8580 /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78EBF325C9D19E009A8580 /* MaintenanceViewController.swift */; };
+		3C78EBFA25C9D1DB009A8580 /* MaintenanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78EBF825C9D1DB009A8580 /* MaintenanceTableViewCell.swift */; };
+		3C78EBFB25C9D1DB009A8580 /* MaintenanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C78EBF925C9D1DB009A8580 /* MaintenanceTableViewCell.xib */; };
+		3C78EC0125C9D68D009A8580 /* MiantenancePaidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78EBFF25C9D68D009A8580 /* MiantenancePaidTableViewCell.swift */; };
+		3C78EC0225C9D68D009A8580 /* MiantenancePaidTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C78EC0025C9D68D009A8580 /* MiantenancePaidTableViewCell.xib */; };
 		3C83ACF425A0991400080AA9 /* EmergencyContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C83ACF325A0991400080AA9 /* EmergencyContacts.storyboard */; };
 		3C83ACF925A0994700080AA9 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C83ACF825A0994700080AA9 /* AboutUs.storyboard */; };
 		3C83ACFE25A0996D00080AA9 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C83ACFD25A0996D00080AA9 /* Explore.storyboard */; };
@@ -33,6 +49,17 @@
 		3C83AD1525A0A20700080AA9 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C83AD1425A0A20700080AA9 /* ExploreViewController.swift */; };
 		3C83AD1A25A0A21900080AA9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C83AD1925A0A21900080AA9 /* AboutUsViewController.swift */; };
 		3C83AD1F25A0A24100080AA9 /* EmergencyContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C83AD1E25A0A24100080AA9 /* EmergencyContactsViewController.swift */; };
+		3C8D04E925BC5BC600EB28A0 /* EmergencyContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D04E725BC5BC600EB28A0 /* EmergencyContactsTableViewCell.swift */; };
+		3C8D04EA25BC5BC600EB28A0 /* EmergencyContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D04E825BC5BC600EB28A0 /* EmergencyContactsTableViewCell.xib */; };
+		3C8D04ED25BDB74C00EB28A0 /* CallusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D04EB25BDB74C00EB28A0 /* CallusTableViewCell.swift */; };
+		3C8D04EE25BDB74C00EB28A0 /* CallusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D04EC25BDB74C00EB28A0 /* CallusTableViewCell.xib */; };
+		3C8D04F125BDDB5400EB28A0 /* BookHallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D04F025BDDB5400EB28A0 /* BookHallsViewController.swift */; };
+		3C8D04F625BDE69300EB28A0 /* BookHallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D04F425BDE69300EB28A0 /* BookHallTableViewCell.swift */; };
+		3C8D04F725BDE69300EB28A0 /* BookHallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D04F525BDE69300EB28A0 /* BookHallTableViewCell.xib */; };
+		3C8D04F925C1D91200EB28A0 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D04F825C1D91200EB28A0 /* CustomPickerView.swift */; };
+		3C8D04FC25C27C2600EB28A0 /* AddFlatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D04FB25C27C2600EB28A0 /* AddFlatViewController.swift */; };
+		3CC2E76B25B318EA00A0AFE0 /* DashBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2E76925B318EA00A0AFE0 /* DashBoardTableViewCell.swift */; };
+		3CC2E76C25B318EA00A0AFE0 /* DashBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC2E76A25B318EA00A0AFE0 /* DashBoardTableViewCell.xib */; };
 		3CCA5C4C2589132600EEC48C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA5C4B2589132600EEC48C /* AppDelegate.swift */; };
 		3CCA5C502589132600EEC48C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA5C4F2589132600EEC48C /* ViewController.swift */; };
 		3CCA5C532589132600EEC48C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA5C512589132600EEC48C /* Main.storyboard */; };
@@ -56,12 +83,6 @@
 		3CDC071025910142005AAE90 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC070B25910142005AAE90 /* BaseViewController.swift */; };
 		3CDC071125910142005AAE90 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC070C25910142005AAE90 /* NavigationBarView.swift */; };
 		3CDC071225910142005AAE90 /* HomeNavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC070D25910142005AAE90 /* HomeNavigationBarView.xib */; };
-		3CDC07182591018C005AAE90 /* TravItemCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC07142591018B005AAE90 /* TravItemCVCell.xib */; };
-		3CDC07192591018C005AAE90 /* ProfillePreferanceCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC07152591018B005AAE90 /* ProfillePreferanceCVCell.xib */; };
-		3CDC071A2591018C005AAE90 /* ProfillePreferanceCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC07162591018B005AAE90 /* ProfillePreferanceCVCell.swift */; };
-		3CDC071B2591018C005AAE90 /* TravItemCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC07172591018B005AAE90 /* TravItemCVCell.swift */; };
-		3CDC071F2591019D005AAE90 /* TravDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC071D2591019D005AAE90 /* TravDocView.swift */; };
-		3CDC07202591019D005AAE90 /* TravDocView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC071E2591019D005AAE90 /* TravDocView.xib */; };
 		3CDC0726259101AB005AAE90 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0722259101AA005AAE90 /* DrawerView.swift */; };
 		3CDC0727259101AB005AAE90 /* DrawerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0723259101AA005AAE90 /* DrawerTableViewCell.swift */; };
 		3CDC0728259101AB005AAE90 /* DrawerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC0724259101AA005AAE90 /* DrawerTableViewCell.xib */; };
@@ -114,6 +135,22 @@
 		3C339E83259390D200F80315 /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		3C339E84259390D200F80315 /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3C339E85259390D200F80315 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		3C5FD09025C3422D00E87831 /* MyFlatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlatsViewController.swift; sourceTree = "<group>"; };
+		3C5FD09225C5870000E87831 /* MyFlatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlatsTableViewCell.swift; sourceTree = "<group>"; };
+		3C5FD09325C5870000E87831 /* MyFlatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFlatsTableViewCell.xib; sourceTree = "<group>"; };
+		3C5FD09725C5ED5B00E87831 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		3C5FD09925C5F00D00E87831 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		3C5FD09A25C5F00D00E87831 /* ServicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesTableViewCell.xib; sourceTree = "<group>"; };
+		3C6173D225C717D6005B8AD3 /* ServiceSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSettingView.swift; sourceTree = "<group>"; };
+		3C6173D725C717F9005B8AD3 /* ServiceSettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceSettingView.xib; sourceTree = "<group>"; };
+		3C739EA925CB24BA00B325CA /* MaintenanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailViewController.swift; sourceTree = "<group>"; };
+		3C739EAE25CC6EB600B325CA /* PaymentSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessView.swift; sourceTree = "<group>"; };
+		3C739EB325CC6ED000B325CA /* PaymentSuccessView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentSuccessView.xib; sourceTree = "<group>"; };
+		3C78EBF325C9D19E009A8580 /* MaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
+		3C78EBF825C9D1DB009A8580 /* MaintenanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceTableViewCell.swift; sourceTree = "<group>"; };
+		3C78EBF925C9D1DB009A8580 /* MaintenanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaintenanceTableViewCell.xib; sourceTree = "<group>"; };
+		3C78EBFF25C9D68D009A8580 /* MiantenancePaidTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiantenancePaidTableViewCell.swift; sourceTree = "<group>"; };
+		3C78EC0025C9D68D009A8580 /* MiantenancePaidTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiantenancePaidTableViewCell.xib; sourceTree = "<group>"; };
 		3C83ACF325A0991400080AA9 /* EmergencyContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmergencyContacts.storyboard; sourceTree = "<group>"; };
 		3C83ACF825A0994700080AA9 /* AboutUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		3C83ACFD25A0996D00080AA9 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -122,6 +159,17 @@
 		3C83AD1425A0A20700080AA9 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		3C83AD1925A0A21900080AA9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		3C83AD1E25A0A24100080AA9 /* EmergencyContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsViewController.swift; sourceTree = "<group>"; };
+		3C8D04E725BC5BC600EB28A0 /* EmergencyContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactsTableViewCell.swift; sourceTree = "<group>"; };
+		3C8D04E825BC5BC600EB28A0 /* EmergencyContactsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyContactsTableViewCell.xib; sourceTree = "<group>"; };
+		3C8D04EB25BDB74C00EB28A0 /* CallusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallusTableViewCell.swift; sourceTree = "<group>"; };
+		3C8D04EC25BDB74C00EB28A0 /* CallusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallusTableViewCell.xib; sourceTree = "<group>"; };
+		3C8D04F025BDDB5400EB28A0 /* BookHallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHallsViewController.swift; sourceTree = "<group>"; };
+		3C8D04F425BDE69300EB28A0 /* BookHallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHallTableViewCell.swift; sourceTree = "<group>"; };
+		3C8D04F525BDE69300EB28A0 /* BookHallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookHallTableViewCell.xib; sourceTree = "<group>"; };
+		3C8D04F825C1D91200EB28A0 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		3C8D04FB25C27C2600EB28A0 /* AddFlatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlatViewController.swift; sourceTree = "<group>"; };
+		3CC2E76925B318EA00A0AFE0 /* DashBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTableViewCell.swift; sourceTree = "<group>"; };
+		3CC2E76A25B318EA00A0AFE0 /* DashBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardTableViewCell.xib; sourceTree = "<group>"; };
 		3CCA5C482589132600EEC48C /* Chowkidar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chowkidar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCA5C4B2589132600EEC48C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CCA5C4F2589132600EEC48C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,12 +199,6 @@
 		3CDC070B25910142005AAE90 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3CDC070C25910142005AAE90 /* NavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		3CDC070D25910142005AAE90 /* HomeNavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNavigationBarView.xib; sourceTree = "<group>"; };
-		3CDC07142591018B005AAE90 /* TravItemCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravItemCVCell.xib; sourceTree = "<group>"; };
-		3CDC07152591018B005AAE90 /* ProfillePreferanceCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfillePreferanceCVCell.xib; sourceTree = "<group>"; };
-		3CDC07162591018B005AAE90 /* ProfillePreferanceCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfillePreferanceCVCell.swift; sourceTree = "<group>"; };
-		3CDC07172591018B005AAE90 /* TravItemCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravItemCVCell.swift; sourceTree = "<group>"; };
-		3CDC071D2591019D005AAE90 /* TravDocView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravDocView.swift; sourceTree = "<group>"; };
-		3CDC071E2591019D005AAE90 /* TravDocView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravDocView.xib; sourceTree = "<group>"; };
 		3CDC0722259101AA005AAE90 /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		3CDC0723259101AA005AAE90 /* DrawerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableViewCell.swift; sourceTree = "<group>"; };
 		3CDC0724259101AA005AAE90 /* DrawerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerTableViewCell.xib; sourceTree = "<group>"; };
@@ -239,6 +281,27 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		3C5FD09625C5ED0D00E87831 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FD09725C5ED5B00E87831 /* ServicesViewController.swift */,
+				3C6173D225C717D6005B8AD3 /* ServiceSettingView.swift */,
+				3C6173D725C717F9005B8AD3 /* ServiceSettingView.xib */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C78EBF225C9D147009A8580 /* Maintenance */ = {
+			isa = PBXGroup;
+			children = (
+				3C78EBF325C9D19E009A8580 /* MaintenanceViewController.swift */,
+				3C739EA925CB24BA00B325CA /* MaintenanceDetailViewController.swift */,
+				3C739EAE25CC6EB600B325CA /* PaymentSuccessView.swift */,
+				3C739EB325CC6ED000B325CA /* PaymentSuccessView.xib */,
+			);
+			path = Maintenance;
+			sourceTree = "<group>";
+		};
 		3C83AD0725A0A0BA00080AA9 /* EmergencyContacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +332,23 @@
 				3C83AD0C25A0A1F300080AA9 /* EditProfileViewController.swift */,
 			);
 			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		3C8D04EF25BDDAE500EB28A0 /* BookHalls */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D04F025BDDB5400EB28A0 /* BookHallsViewController.swift */,
+			);
+			path = BookHalls;
+			sourceTree = "<group>";
+		};
+		3C8D04FA25C27BE400EB28A0 /* AddFlat */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D04FB25C27C2600EB28A0 /* AddFlatViewController.swift */,
+				3C5FD09025C3422D00E87831 /* MyFlatsViewController.swift */,
+			);
+			path = AddFlat;
 			sourceTree = "<group>";
 		};
 		3CCA5C3F2589132600EEC48C = {
@@ -309,6 +389,10 @@
 				3CDC06FC259100D6005AAE90 /* Validation.swift */,
 				3CCA5C4F2589132600EEC48C /* ViewController.swift */,
 				3C339E73259390D100F80315 /* Font */,
+				3C78EBF225C9D147009A8580 /* Maintenance */,
+				3C5FD09625C5ED0D00E87831 /* Services */,
+				3C8D04EF25BDDAE500EB28A0 /* BookHalls */,
+				3C8D04FA25C27BE400EB28A0 /* AddFlat */,
 				3CF839E025925BBA0055BA76 /* Home */,
 				3CDC072A259101BC005AAE90 /* Login */,
 				3CDC0721259101AA005AAE90 /* Drawer View */,
@@ -366,10 +450,22 @@
 		3CDC07132591018B005AAE90 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				3CDC07142591018B005AAE90 /* TravItemCVCell.xib */,
-				3CDC07152591018B005AAE90 /* ProfillePreferanceCVCell.xib */,
-				3CDC07162591018B005AAE90 /* ProfillePreferanceCVCell.swift */,
-				3CDC07172591018B005AAE90 /* TravItemCVCell.swift */,
+				3CC2E76925B318EA00A0AFE0 /* DashBoardTableViewCell.swift */,
+				3CC2E76A25B318EA00A0AFE0 /* DashBoardTableViewCell.xib */,
+				3C8D04E725BC5BC600EB28A0 /* EmergencyContactsTableViewCell.swift */,
+				3C8D04E825BC5BC600EB28A0 /* EmergencyContactsTableViewCell.xib */,
+				3C8D04EB25BDB74C00EB28A0 /* CallusTableViewCell.swift */,
+				3C8D04EC25BDB74C00EB28A0 /* CallusTableViewCell.xib */,
+				3C8D04F425BDE69300EB28A0 /* BookHallTableViewCell.swift */,
+				3C8D04F525BDE69300EB28A0 /* BookHallTableViewCell.xib */,
+				3C5FD09225C5870000E87831 /* MyFlatsTableViewCell.swift */,
+				3C5FD09325C5870000E87831 /* MyFlatsTableViewCell.xib */,
+				3C5FD09925C5F00D00E87831 /* ServicesTableViewCell.swift */,
+				3C5FD09A25C5F00D00E87831 /* ServicesTableViewCell.xib */,
+				3C78EBF825C9D1DB009A8580 /* MaintenanceTableViewCell.swift */,
+				3C78EBF925C9D1DB009A8580 /* MaintenanceTableViewCell.xib */,
+				3C78EBFF25C9D68D009A8580 /* MiantenancePaidTableViewCell.swift */,
+				3C78EC0025C9D68D009A8580 /* MiantenancePaidTableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -377,8 +473,7 @@
 		3CDC071C2591019D005AAE90 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				3CDC071D2591019D005AAE90 /* TravDocView.swift */,
-				3CDC071E2591019D005AAE90 /* TravDocView.xib */,
+				3C8D04F825C1D91200EB28A0 /* CustomPickerView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -530,6 +625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5FD09C25C5F00D00E87831 /* ServicesTableViewCell.xib in Resources */,
 				3C339E94259390D200F80315 /* WorkSans-Black.ttf in Resources */,
 				3CCA5C5B2589132B00EEC48C /* LaunchScreen.storyboard in Resources */,
 				3C339E8A259390D200F80315 /* WorkSans-MediumItalic.ttf in Resources */,
@@ -539,30 +635,36 @@
 				3C339E93259390D200F80315 /* WorkSans-Thin.ttf in Resources */,
 				3CDC0729259101AB005AAE90 /* DrawerView.xib in Resources */,
 				3C339E8E259390D200F80315 /* WorkSans-ExtraLightItalic.ttf in Resources */,
+				3C8D04EE25BDB74C00EB28A0 /* CallusTableViewCell.xib in Resources */,
+				3C8D04EA25BC5BC600EB28A0 /* EmergencyContactsTableViewCell.xib in Resources */,
 				3C83ACFE25A0996D00080AA9 /* Explore.storyboard in Resources */,
+				3C739EB425CC6ED000B325CA /* PaymentSuccessView.xib in Resources */,
 				3C339E88259390D200F80315 /* WorkSans-ExtraBold.ttf in Resources */,
 				3C83ACF425A0991400080AA9 /* EmergencyContacts.storyboard in Resources */,
 				3CDC071225910142005AAE90 /* HomeNavigationBarView.xib in Resources */,
 				3C339E86259390D200F80315 /* WorkSans-Regular.ttf in Resources */,
 				3C339E8D259390D200F80315 /* WorkSans-ThinItalic.ttf in Resources */,
+				3C8D04F725BDE69300EB28A0 /* BookHallTableViewCell.xib in Resources */,
 				3C339E8B259390D200F80315 /* WorkSans-BoldItalic.ttf in Resources */,
 				3C339E91259390D200F80315 /* WorkSans-Italic.ttf in Resources */,
 				3C339E97259390D200F80315 /* WorkSans-Bold.ttf in Resources */,
-				3CDC07182591018C005AAE90 /* TravItemCVCell.xib in Resources */,
 				3C339E92259390D200F80315 /* WorkSans-BlackItalic.ttf in Resources */,
 				3C339E96259390D200F80315 /* WorkSans-ExtraBoldItalic.ttf in Resources */,
 				3CCA5C582589132B00EEC48C /* Assets.xcassets in Resources */,
+				3C5FD09525C5870000E87831 /* MyFlatsTableViewCell.xib in Resources */,
+				3C78EC0225C9D68D009A8580 /* MiantenancePaidTableViewCell.xib in Resources */,
 				3CDC070F25910142005AAE90 /* NavigationBarView.xib in Resources */,
+				3CC2E76C25B318EA00A0AFE0 /* DashBoardTableViewCell.xib in Resources */,
 				3CCA5C532589132600EEC48C /* Main.storyboard in Resources */,
 				3CDC0728259101AB005AAE90 /* DrawerTableViewCell.xib in Resources */,
 				3C83ACF925A0994700080AA9 /* AboutUs.storyboard in Resources */,
-				3CDC07202591019D005AAE90 /* TravDocView.xib in Resources */,
-				3CDC07192591018C005AAE90 /* ProfillePreferanceCVCell.xib in Resources */,
 				3C339E87259390D200F80315 /* WorkSans-Light.ttf in Resources */,
 				3C339E8C259390D200F80315 /* WorkSans-ExtraLight.ttf in Resources */,
 				3C339E8F259390D200F80315 /* WorkSans-Medium.ttf in Resources */,
 				3CF839DC25910F350055BA76 /* Login.storyboard in Resources */,
 				3C339E90259390D200F80315 /* WorkSans-SemiBold.ttf in Resources */,
+				3C6173D825C717F9005B8AD3 /* ServiceSettingView.xib in Resources */,
+				3C78EBFB25C9D1DB009A8580 /* MaintenanceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,34 +792,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8D04E925BC5BC600EB28A0 /* EmergencyContactsTableViewCell.swift in Sources */,
 				3CDC0703259100D6005AAE90 /* Extension.swift in Sources */,
 				3C83AD1A25A0A21900080AA9 /* AboutUsViewController.swift in Sources */,
+				3CC2E76B25B318EA00A0AFE0 /* DashBoardTableViewCell.swift in Sources */,
 				3CDC0700259100D6005AAE90 /* Sorting.swift in Sources */,
-				3CDC071B2591018C005AAE90 /* TravItemCVCell.swift in Sources */,
+				3C8D04F925C1D91200EB28A0 /* CustomPickerView.swift in Sources */,
+				3C5FD09825C5ED5B00E87831 /* ServicesViewController.swift in Sources */,
 				3CDC072E259101BC005AAE90 /* LoginViewController.swift in Sources */,
 				3CDC0726259101AB005AAE90 /* DrawerView.swift in Sources */,
+				3C739EAA25CB24BA00B325CA /* MaintenanceDetailViewController.swift in Sources */,
 				3CDC071125910142005AAE90 /* NavigationBarView.swift in Sources */,
 				3CDC0704259100D6005AAE90 /* CellReusable.swift in Sources */,
 				3CDC072D259101BC005AAE90 /* OTPViewController.swift in Sources */,
 				3CDC0705259100D6005AAE90 /* Utility.swift in Sources */,
-				3CDC071A2591018C005AAE90 /* ProfillePreferanceCVCell.swift in Sources */,
 				3C83AD1525A0A20700080AA9 /* ExploreViewController.swift in Sources */,
 				3CDC06FF259100D6005AAE90 /* DataModel.swift in Sources */,
+				3C78EBFA25C9D1DB009A8580 /* MaintenanceTableViewCell.swift in Sources */,
+				3C8D04F625BDE69300EB28A0 /* BookHallTableViewCell.swift in Sources */,
 				3CF839E225925BBB0055BA76 /* HomeViewController.swift in Sources */,
 				3CDC071025910142005AAE90 /* BaseViewController.swift in Sources */,
+				3C8D04FC25C27C2600EB28A0 /* AddFlatViewController.swift in Sources */,
 				3CCA5C502589132600EEC48C /* ViewController.swift in Sources */,
 				3CDC0701259100D6005AAE90 /* NetworkManager.swift in Sources */,
+				3C6173D325C717D6005B8AD3 /* ServiceSettingView.swift in Sources */,
 				3CDC070E25910142005AAE90 /* HomeNavigationBarView.swift in Sources */,
 				3CDC0702259100D6005AAE90 /* Connectivity.swift in Sources */,
 				3CCA5C4C2589132600EEC48C /* AppDelegate.swift in Sources */,
 				3CDC0707259100D6005AAE90 /* Loader.swift in Sources */,
+				3C78EBF425C9D19E009A8580 /* MaintenanceViewController.swift in Sources */,
+				3C739EAF25CC6EB600B325CA /* PaymentSuccessView.swift in Sources */,
 				3CCA5C562589132600EEC48C /* Chowkidar.xcdatamodeld in Sources */,
+				3C5FD09B25C5F00D00E87831 /* ServicesTableViewCell.swift in Sources */,
 				3C83AD1F25A0A24100080AA9 /* EmergencyContactsViewController.swift in Sources */,
 				3CDC0727259101AB005AAE90 /* DrawerTableViewCell.swift in Sources */,
+				3C5FD09125C3422D00E87831 /* MyFlatsViewController.swift in Sources */,
+				3C8D04ED25BDB74C00EB28A0 /* CallusTableViewCell.swift in Sources */,
 				3CDC0706259100D6005AAE90 /* Validation.swift in Sources */,
+				3C5FD09425C5870000E87831 /* MyFlatsTableViewCell.swift in Sources */,
+				3C8D04F125BDDB5400EB28A0 /* BookHallsViewController.swift in Sources */,
+				3C78EC0125C9D68D009A8580 /* MiantenancePaidTableViewCell.swift in Sources */,
 				3CDC06FE259100D6005AAE90 /* Constant.swift in Sources */,
 				3C83AD0D25A0A1F300080AA9 /* EditProfileViewController.swift in Sources */,
-				3CDC071F2591019D005AAE90 /* TravDocView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

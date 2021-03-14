@@ -1,21 +1,27 @@
 //
 //  DrawerView.swift
-//  TravCRM
+//  Chowkidar
 //
-//  Created by Sudhanshu Gupta on 13/04/20.
-//  Copyright © 2020 iDev. All rights reserved.
+//  Created by Ravi Mishra on 16/1/21.
+//  Copyright © 2021 Ravi Mishra. All rights reserved.
 //
 
 import UIKit
 
 class DrawerView: UIView {
-
+    
     @IBOutlet weak var aCloseButton: UIButton!
     @IBOutlet weak var aEditProfileButton: UIButton!
     @IBOutlet weak var aAccountNameLabel: UILabel!
     @IBOutlet weak var aProfilePicImageView: UIImageView!
     @IBOutlet weak var aTableView: UITableView!
     
+    @IBOutlet weak var addressLine1: UILabel!
+    @IBOutlet weak var generValueLabel: UILabel!
+    
+    @IBOutlet weak var idNumberLabel: UILabel!
+    @IBOutlet weak var emailIdLabel: UILabel!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
     var closeActionClouser: (() -> Void) = { }
     var emergencyContactsActionClouser: (() -> Void) = { }
     var aboutUsActionClouser: (() -> Void) = { }
@@ -23,12 +29,12 @@ class DrawerView: UIView {
     var myProfileActionClouser: ((Bool) -> Void) = { _ in}
     var messagingActionClouser: (() -> Void) = { }
     var logoutActionClouser: (() -> Void) = { }
-    var profileData: ProfileDataResult? {
+    var profileData: UserProfileDataModel? {
         didSet {
             updateProfileData()
         }
     }
-
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,7 +43,7 @@ class DrawerView: UIView {
     
     func setupUI() {
         aTableView.register(UINib(nibName: DrawerTableViewCell.identifier(), bundle: nil), forCellReuseIdentifier: DrawerTableViewCell.identifier())
-       // aEditProfileButton.setCornerRadiusButton(value: 15)
+        // aEditProfileButton.setCornerRadiusButton(value: 15)
         aProfilePicImageView.setCornerRadiusImageView(value: 42.5)
     }
     
@@ -56,10 +62,47 @@ class DrawerView: UIView {
     
     func updateProfileData() {
         if let profileInfo = profileData {
-            if let name = profileInfo.name {
-                aAccountNameLabel.text = name.capitalized
+            if let name = profileInfo.name{
+                aAccountNameLabel.text = name
+            }else{ aAccountNameLabel.text = ""}
+            if let gender = profileInfo.genderName{
+                generValueLabel.text = gender
+            }else{ generValueLabel.text = ""}
+            if let addressPermanent = profileInfo.permanentAddress{
+                addressLine1.text = addressPermanent
+            }else{ addressLine1.text = ""}
+            if let emailID = profileInfo.emailID{
+                emailIdLabel.text = emailID
+            }else{ emailIdLabel.text = ""}
+            if let dateofBirth = profileInfo.dobDate{
+                dateOfBirthLabel.text = String(dateofBirth)
+            }else{ dateOfBirthLabel.text = ""}
+            if let IDNumber = profileInfo.professionID{
+                idNumberLabel.text = String(IDNumber)
+            }else{ idNumberLabel.text = ""}
+            if let profilePicURLString = profileInfo.imageURL{
+                let profilePicURL = URL(string: profilePicURLString)
+                    //URL(with: profilePicURLString)
+                self.downloadImage(from: profilePicURL!)
+                       }else{ idNumberLabel.text = ""}
+            
+        }
+    }
+    
+    func downloadImage(from url: URL) {
+        print("Download Started")
+        getData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            DispatchQueue.main.async() { [weak self] in
+                self?.aProfilePicImageView.image = UIImage(data: data)
             }
         }
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
 }
 
@@ -81,11 +124,11 @@ extension DrawerView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         closeActionClouser()
         switch indexPath.row {
-        case 0: // My trip Itinerary
+        case 0: // emergency contacts
             emergencyContactsActionClouser()
-        case 1: // Travel Documents
+        case 1: // About us
             aboutUsActionClouser()
-        case 2: // Alerts
+        case 2: // Explore
             exploreActionClouser()
         default:
             break

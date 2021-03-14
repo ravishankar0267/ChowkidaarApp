@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Medium.ttf">
+            <string>WorkSans-Medium</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+        <array key="WorkSans-SemiBold.ttf">
+            <string>WorkSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="MaintenanceTableViewCell" customModule="Chowkidar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyd-UT-AQu">
+                        <rect key="frame" x="16" y="17" width="317" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invoice #8765331" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcK-Ks-Ir6">
+                                <rect key="frame" x="8" y="14" width="163" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="WHh-U3-sW5"/>
+                                    <constraint firstAttribute="width" constant="163" id="oTi-SU-SBC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Medium" family="Work Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.4039215686" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 9500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAE-jd-6rO">
+                                <rect key="frame" x="8" y="44" width="120" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Foo-1h-mFK"/>
+                                    <constraint firstAttribute="height" constant="18" id="yk4-dy-ZiY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="August 2020 " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csS-j1-HpQ">
+                                <rect key="frame" x="9" y="67" width="97" height="18"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="15"/>
+                                <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-UG-13k">
+                                <rect key="frame" x="213" y="79" width="96" height="32"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.52549019610000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Gwe-Py-6gW"/>
+                                    <constraint firstAttribute="width" constant="96" id="jS3-A3-Fuz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
+                                <state key="normal" title="   Pay Now    "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay before Sept 15th" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKi-AC-t2Z">
+                                <rect key="frame" x="8" y="88" width="151" height="18"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="15"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sAE-jd-6rO" firstAttribute="leading" secondItem="uyd-UT-AQu" secondAttribute="leading" constant="8" id="1Dt-Nu-Jir"/>
+                            <constraint firstAttribute="bottom" secondItem="NRX-UG-13k" secondAttribute="bottom" constant="9" id="20J-ZS-tuY"/>
+                            <constraint firstItem="csS-j1-HpQ" firstAttribute="leading" secondItem="uyd-UT-AQu" secondAttribute="leading" constant="9" id="3NQ-oU-JLc"/>
+                            <constraint firstItem="sAE-jd-6rO" firstAttribute="top" secondItem="mcK-Ks-Ir6" secondAttribute="bottom" constant="11" id="CtK-43-cTM"/>
+                            <constraint firstItem="mcK-Ks-Ir6" firstAttribute="top" secondItem="uyd-UT-AQu" secondAttribute="top" constant="14" id="GRj-rh-4bR"/>
+                            <constraint firstItem="WKi-AC-t2Z" firstAttribute="top" secondItem="csS-j1-HpQ" secondAttribute="bottom" constant="3" id="Ga7-2O-5RL"/>
+                            <constraint firstAttribute="trailing" secondItem="NRX-UG-13k" secondAttribute="trailing" constant="8" id="SI1-8W-110"/>
+                            <constraint firstAttribute="bottom" secondItem="WKi-AC-t2Z" secondAttribute="bottom" constant="14" id="TbU-rw-ccy"/>
+                            <constraint firstItem="mcK-Ks-Ir6" firstAttribute="leading" secondItem="uyd-UT-AQu" secondAttribute="leading" constant="8" id="dLJ-7e-ZM2"/>
+                            <constraint firstItem="csS-j1-HpQ" firstAttribute="top" secondItem="sAE-jd-6rO" secondAttribute="bottom" constant="5" id="is8-Ux-c75"/>
+                            <constraint firstItem="WKi-AC-t2Z" firstAttribute="leading" secondItem="uyd-UT-AQu" secondAttribute="leading" constant="8" id="p32-EH-Qqt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uyd-UT-AQu" secondAttribute="trailing" constant="17" id="6lt-ZK-76g"/>
+                    <constraint firstItem="uyd-UT-AQu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="OEw-r6-Xav"/>
+                    <constraint firstItem="uyd-UT-AQu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="kDe-IO-sze"/>
+                    <constraint firstAttribute="bottom" secondItem="uyd-UT-AQu" secondAttribute="bottom" constant="18" id="nE1-M4-ZEA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundCellView" destination="uyd-UT-AQu" id="tso-Tc-GaH"/>
+                <outlet property="invoiceAmountLabel" destination="sAE-jd-6rO" id="hRG-KV-cEp"/>
+                <outlet property="invoiceGeneratedDate" destination="csS-j1-HpQ" id="Gku-nh-VbM"/>
+                <outlet property="invoiceLabel" destination="mcK-Ks-Ir6" id="hIy-79-kgd"/>
+                <outlet property="invoicePayDate" destination="WKi-AC-t2Z" id="1fs-jH-oWY"/>
+                <outlet property="payNowButton" destination="NRX-UG-13k" id="ULb-a4-MsZ"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="86.71875"/>
+        </tableViewCell>
+    </objects>
+</document>

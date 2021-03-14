@@ -1,10 +1,9 @@
 //
 //  DrawerTableViewCell.swift
-//  TravCRM
+//  Chowkidar
 //
-//  Created by Sudhanshu Gupta on 13/04/20.
-//  Copyright © 2020 iDev. All rights reserved.
-//
+//  Created by Ravi Mishra on 16/1/21.
+//  Copyright © 2021 Ravi Mishra. All rights reserved.
 
 import UIKit
 

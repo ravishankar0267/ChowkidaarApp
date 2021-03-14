@@ -1,23 +1,32 @@
 //
 //  HomeViewController.swift
-//  TravCRM
+//  Chowkidar
 //
-//  Created by Sudhanshu Gupta on 13/04/20.
-//  Copyright © 2020 iDev. All rights reserved.
-//
+//  Created by Ravi Mishra on 16/1/21.
+//  Copyright © 2021 Ravi Mishra. All rights reserved.
 
 import UIKit
+import Alamofire
 
 class HomeViewController: BaseViewController {
-
+    
     @IBOutlet weak var aCollectionView: UICollectionView!
     
-    var profileDataModel: ProfileDataModel?
+   // var profileDataModel: ProfileDataModel?
     var drawerView: DrawerView?
+    var dashboardDataModel:DashboardDataModel?
+    var userDataModel:UserProfileDataModel?
+    var buttonSelectionTap = DashboardButtonSelection.bookHall
     
+    @IBOutlet weak var dashboardTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       // aCollectionView.register(UINib(nibName: TravItemCVCell.identifier(), bundle: nil), forCellWithReuseIdentifier: TravItemCVCell.identifier())
+        fetchDashboardData()
+        
+        dashboardTableView.register(UINib(nibName: DashBoardTableViewCell.identifier(), bundle: nil), forCellReuseIdentifier: DashBoardTableViewCell.identifier())
+        
+          dashboardTableView.rowHeight = UITableView.automaticDimension
+         dashboardTableView.estimatedRowHeight = 100
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,27 +35,53 @@ class HomeViewController: BaseViewController {
         getProfileData()
     }
     
+    func fetchDashboardData()  {
+        let headers: HTTPHeaders = [
+            "accept": "application/json",
+            "content-type": "application/json",
+        ]
+        let params: [String: Any] = [
+            "accessId" : UserDefaults.standard.value(forKey: kAccessId) ?? "",
+            "userId" :  UserDefaults.standard.value(forKey: kUserID) ?? "",
+            "complexId" :  UserDefaults.standard.value(forKey: kComplexID) ?? "" ,
+            "flatNumber" :  UserDefaults.standard.value(forKey: kFaltNo) as! String,
+            "wing" :  UserDefaults.standard.value(forKey: kWing) as! String
+        ]
+        self.showActivityIndicator(sMessage: "Fetching Dashboard data")
+        NetworkManager.post_Request(urlService: kGetUserDashboardData, param: params, head: headers, responseType: DashboardDataModel.self) { (response, statusCode) in
+            if response != nil {
+                self.hideActivityIndicator()
+                guard let responseData = response as? DashboardDataModel else {
+                    return
+                }
+              
+                if statusCode == 200 {
+                    Loader.showToast(message: "Recieved dashboard data" , onView: self.view, bottomMargin: 200)
+                    self.dashboardDataModel = responseData
+                    self.dashboardTableView.reloadData()
+                } else {
+                    Loader.showAlert(message: "Unable to fetch dashboard data" )
+                }
+            }
+        }
+    }
+    
     override func handleMenuButtonAction() {
         openDrawerView()
     }
     
     override func handleNotificationButtonAction() {
-       // openAlertsVC()
+        // openAlertsVC()
     }
     
     func openDrawerView() {
+        getProfileData()
         if drawerView == nil {
             drawerView = Bundle.main.loadNibNamed("DrawerView", owner: self, options: nil)?.first as? DrawerView
             drawerView?.frame = CGRect(x: -ScreenSize.SCREEN_WIDTH, y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT)
             APP_DEL.window?.addSubview(drawerView!)
-            if let profileInfo = self.profileDataModel {
-                if let profileResult = profileInfo.results {
-                    if profileResult.count > 0 {
-                        drawerView?.profileData = profileResult[0]
-                    }
-                }
-            }
             drawerView?.setCloseButtonBackgroundColor(color: .clear)
+            drawerView?.profileData = userDataModel
             UIView.animate(withDuration: 0.5, animations: {
                 self.drawerView?.frame = CGRect(x: 0, y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT)
             }) { (true) in
@@ -77,11 +112,11 @@ class HomeViewController: BaseViewController {
                     strongSelf.openExploreVC()
                 }
             }
-//            drawerView?.messagingActionClouser = { [weak self] in
-//                if let strongSelf = self {
-//                    strongSelf.openMessagingVC()
-//                }
-//            }
+            //            drawerView?.messagingActionClouser = { [weak self] in
+            //                if let strongSelf = self {
+            //                    strongSelf.openMessagingVC()
+            //                }
+            //            }
             drawerView?.logoutActionClouser = {[weak self] in
                 if let strongSelf = self {
                     strongSelf.logoutAction()
@@ -103,7 +138,7 @@ class HomeViewController: BaseViewController {
     
     func logoutAction() {
         let alert = UIAlertController(title: "Logout", message: "Would you like to logout?", preferredStyle: UIAlertController.Style.alert)
-
+        
         alert.addAction(UIAlertAction(title: "Okay", style: .destructive, handler: { (action) in
             UserDefaults.standard.set(false, forKey: kIsLoggedIn)
             UserDefaults.standard.synchronize()
@@ -130,80 +165,107 @@ class HomeViewController: BaseViewController {
             
         }
     }
-//
+    
     func openMyProfileVC(isDrawerEditAction: Bool) {
         openViewController(controller: EditProfileViewController.self, storyBoard: .editProfile) { (vc) in
-//            vc.isFromDrawerEditAction = isDrawerEditAction
-//            if let profileInfo = self.profileDataModel {
-//                if let profileResult = profileInfo.results {
-//                    if profileResult.count > 0 {
-//                        vc.profileData = profileResult[0]
-//                    }
-                }
-            }
-       // }
-   // }
-
-//    func openAlertsVC() {
-//        openViewController(controller: AlertViewController.self, storyBoard: .homeStoryBoard) { (vc) in
-//
-//        }
-//    }
-//
-//    func openMyTripVC() {
-//        openViewController(controller: MyBookingViewController.self, storyBoard: .myBookingsStoryBoard) { (vc) in
-//
-//        }
-//    }
-//
-//    func openMessagingVC() {
-//        openViewController(controller: MessagingViewController.self, storyBoard: .messagingStoryBoard) { (vc) in
-//
-//        }
-//    }
-//
-//    func openTripFeedbackVC() {
-//        openViewController(controller: TripFeedbackViewController.self, storyBoard: .travelStoryBoard) { (vc) in
-//
-//        }
-//    }
-//
-//    func openTripUtilityVC() {
-//        openViewController(controller: TripUtilitiesViewController.self, storyBoard: .travelStoryBoard) { (vc) in
-//
-//        }
-//    }
-//
-//    func openHolidayVC() {
-//        openViewController(controller: HolidayViewController.self, storyBoard: .travelStoryBoard) { (vc) in
-//
-//        }
-//    }
-//
-//    func openReferEarnVC() {
-//        openViewController(controller: ReferEarnViewController.self, storyBoard: .homeStoryBoard) { (vc) in
-//
-//        }
-//    }
+            //            vc.isFromDrawerEditAction = isDrawerEditAction
+            //            if let profileInfo = self.profileDataModel {
+            //                if let profileResult = profileInfo.results {
+            //                    if profileResult.count > 0 {
+            //                        vc.profileData = profileResult[0]
+            //                    }
+        }
+    }
+    // }
+    // }
+    
     
     func getProfileData() {
-        if let userID = UserDefaults.standard.value(forKey: kLoginID) as? String {
-            NetworkManager.generateURLWithQueryParam(baseURL: kBASE_URL, componentURL: URL_Profile, queryItems: [URLQueryItem.init(name: "id", value: userID)]) { (responseURL) in
-                if let finalURL = responseURL as? URL {
-                    NetworkManager.get_Request(requestURL: finalURL) { (response) in
-                        do {
-                            if response != nil {
-                                let responseData = try JSONSerialization.data(withJSONObject: response!, options: [])
-                                let responseModel = try JSONDecoder().decode(ProfileDataModel.self, from: responseData)
-                                self.profileDataModel = responseModel
-                            }
-                        } catch {
-                            Loader.showAlert(message: requestFailureError)
-                        }
-                    }
+        let headers: HTTPHeaders = [
+            "accept": "application/json",
+            "content-type": "application/json",
+        ]
+        
+        let params: [String: Any] = [
+            "accessId" : 500,
+            "userId" : 500,
+        ]
+        
+        NetworkManager.post_Request(urlService: KFetchProfile, param: params, head: headers, responseType: UserProfileDataModel.self) { (response, statusCode) in
+            if response != nil {
+                guard let responseData = response as? UserProfileDataModel else {
+                    return
+                }
+                if statusCode == 200 {
+                    print("Profile Response ===", responseData)
+                    Loader.showToast(message: "responseData.complexName" , onView: self.view, bottomMargin: 200)
+                    self.userDataModel = responseData
+                } else {
+                    Loader.showAlert(message: "responseData.complexName" )
                 }
             }
         }
     }
+    
+    func cellButtonClickAction(sender:UIButton)  {
+        switch sender.tag {
+        case DashboardButtonSelection.payNow.rawValue:
+            print("payNow Clicked")
+            break
+        case DashboardButtonSelection.viewHelper.rawValue:
+            print("viewHelper Clicked")
+            break
+        case DashboardButtonSelection.bookHall.rawValue:
+            print("Book Hall Clicked")
+            break
+        case DashboardButtonSelection.inviteVisitor.rawValue:
+            print("inviteVisitor Clicked")
+            break
+        case DashboardButtonSelection.addTickets.rawValue:
+            print("addTickets Clicked")
+            break
+        default:
+            break
+        }
+    }
+}
+
+extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dashboardDataModel?.itemList?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: DashBoardTableViewCell.identifier(), for: indexPath) as! DashBoardTableViewCell
+        cell.setupUIData(itemList: dashboardDataModel!.itemList?[indexPath.row] )
+        cell.tableCellButtonCompletionBlock = {btn -> Void in
+        weak var weakSelf : HomeViewController? = self
+                   if let strongself = weakSelf
+                   {
+                    strongself.cellButtonClickAction(sender: btn)
+                   }
+               }
+        return cell
+        
+    }
+    
+    
+    
+        func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+            return UITableView.automaticDimension
+        }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.row == 0){
+        openViewController(controller: MaintenanceViewController.self, storyBoard: .mainStoryBoard) { (vc) in
+            
+        }}
+        else {
+            openViewController(controller: ServicesViewController.self, storyBoard: .mainStoryBoard) { (vc) in
+                
+            }
+            
+        }
+    }
+    
 }
 

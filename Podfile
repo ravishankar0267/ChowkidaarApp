@@ -8,6 +8,7 @@ target 'Chowkidar' do
   # Pods for Chowkidar
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
+  pod 'RangeSeekSlider'
 
   target 'ChowkidarTests' do
     inherit! :search_paths

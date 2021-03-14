@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.1)
   - IQKeyboardManagerSwift (6.5.6)
+  - RangeSeekSlider (1.8.0)
 
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
+  - RangeSeekSlider
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
+    - RangeSeekSlider
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
 
-PODFILE CHECKSUM: 9c84400e70cff7b34eee0972fee459c7362801d7
+PODFILE CHECKSUM: 52d76600404f1afdfbfc7bed7af4198414b00636
 
 COCOAPODS: 1.10.0

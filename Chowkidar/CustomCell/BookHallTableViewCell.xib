@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Light.ttf">
+            <string>WorkSans-Light</string>
+        </array>
+        <array key="WorkSans-Medium.ttf">
+            <string>WorkSans-Medium</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+        <array key="WorkSans-SemiBold.ttf">
+            <string>WorkSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookHallTableViewCell" rowHeight="155" id="KGk-i7-Jjw" customClass="BookHallTableViewCell" customModule="Chowkidar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-EY-nth">
+                        <rect key="frame" x="14" y="18" width="317" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platinum Sonaria" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkn-UL-u0d">
+                                <rect key="frame" x="8" y="9" width="173" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="4SJ-iO-kOk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Medium" family="Work Sans" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.4039215686" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son's birthday" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7j-OK-Beh">
+                                <rect key="frame" x="8" y="40" width="190" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="Udl-j5-0hJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="17"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25th july, 4PM to 7PM" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdD-oa-v0Q">
+                                <rect key="frame" x="8" y="62" width="149" height="18"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Light" family="Work Sans" pointSize="15"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU6-DD-NMv">
+                                <rect key="frame" x="8" y="90" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HiU-Co-7Xq"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.90588235289999997" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIm-SR-OPt">
+                                <rect key="frame" x="257" y="67" width="58" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="1RJ-vp-A0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                                <state key="normal" title="Pay Now">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.52549019610000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 900" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM5-6O-Zkr">
+                                <rect key="frame" x="266.5" y="40" width="48.5" height="20"/>
+                                <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="17"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uU6-DD-NMv" firstAttribute="leading" secondItem="Xtp-EY-nth" secondAttribute="leading" constant="8" id="57R-wU-Ib6"/>
+                            <constraint firstAttribute="bottom" secondItem="uU6-DD-NMv" secondAttribute="bottom" id="IPT-QK-cc1"/>
+                            <constraint firstItem="DIm-SR-OPt" firstAttribute="top" secondItem="gM5-6O-Zkr" secondAttribute="bottom" constant="7" id="KGq-Ng-aYB"/>
+                            <constraint firstItem="gM5-6O-Zkr" firstAttribute="bottom" secondItem="X7j-OK-Beh" secondAttribute="bottom" id="Kcl-GW-ELr"/>
+                            <constraint firstItem="uU6-DD-NMv" firstAttribute="leading" secondItem="NdD-oa-v0Q" secondAttribute="leading" id="SZ6-4w-WGZ"/>
+                            <constraint firstItem="uU6-DD-NMv" firstAttribute="top" secondItem="NdD-oa-v0Q" secondAttribute="bottom" constant="10" id="WUW-zm-YHj"/>
+                            <constraint firstItem="NdD-oa-v0Q" firstAttribute="top" secondItem="X7j-OK-Beh" secondAttribute="bottom" constant="2" id="XBu-Td-N4f"/>
+                            <constraint firstItem="zkn-UL-u0d" firstAttribute="leading" secondItem="Xtp-EY-nth" secondAttribute="leading" constant="8" id="Y5o-A8-rcd"/>
+                            <constraint firstItem="zkn-UL-u0d" firstAttribute="top" secondItem="Xtp-EY-nth" secondAttribute="top" constant="9" id="a7X-iW-QxX"/>
+                            <constraint firstItem="gM5-6O-Zkr" firstAttribute="top" secondItem="X7j-OK-Beh" secondAttribute="top" id="cfL-RO-02V"/>
+                            <constraint firstItem="X7j-OK-Beh" firstAttribute="leading" secondItem="Xtp-EY-nth" secondAttribute="leading" constant="8" id="hNS-JG-Yx3"/>
+                            <constraint firstAttribute="trailing" secondItem="gM5-6O-Zkr" secondAttribute="trailing" constant="2" id="qaB-qc-eH2"/>
+                            <constraint firstItem="NdD-oa-v0Q" firstAttribute="leading" secondItem="Xtp-EY-nth" secondAttribute="leading" constant="8" id="vbv-Tw-uBP"/>
+                            <constraint firstItem="X7j-OK-Beh" firstAttribute="top" secondItem="zkn-UL-u0d" secondAttribute="bottom" constant="12" id="zTc-Ct-9Cv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Xtp-EY-nth" secondAttribute="bottom" constant="17" id="5mb-Ve-Bs1"/>
+                    <constraint firstAttribute="trailing" secondItem="Xtp-EY-nth" secondAttribute="trailing" constant="20" id="Mpc-6C-fvm"/>
+                    <constraint firstItem="Xtp-EY-nth" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="OpF-TY-onL"/>
+                    <constraint firstItem="Xtp-EY-nth" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="TcI-TC-iRV"/>
+                    <constraint firstAttribute="trailing" secondItem="DIm-SR-OPt" secondAttribute="trailing" constant="22" id="efO-J3-urF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="AmountDetailsLabel" destination="gM5-6O-Zkr" id="WUW-hz-Djp"/>
+                <outlet property="backgroundCellView" destination="Xtp-EY-nth" id="9IL-V2-jaf"/>
+                <outlet property="buttonHeightConstraint" destination="HiU-Co-7Xq" id="C1J-pS-pCC"/>
+                <outlet property="cancelBookingButton" destination="uU6-DD-NMv" id="rh6-jE-EmV"/>
+                <outlet property="dateLabel" destination="NdD-oa-v0Q" id="ire-B9-TjE"/>
+                <outlet property="eventLabel" destination="X7j-OK-Beh" id="fLp-D2-2lV"/>
+                <outlet property="venueLabel" destination="zkn-UL-u0d" id="PH4-6i-KDl"/>
+            </connections>
+            <point key="canvasLocation" x="58.695652173913047" y="39.174107142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
