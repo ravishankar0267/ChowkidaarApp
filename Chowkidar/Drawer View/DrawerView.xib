@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -183,7 +182,7 @@
                                 <outlet property="delegate" destination="iN0-l3-epB" id="2Gw-wK-hqP"/>
                             </connections>
                         </tableView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNL-xP-BoA">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNL-xP-BoA">
                             <rect key="frame" x="294" y="0.0" width="120" height="901"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -193,7 +192,7 @@
                                 <action selector="closeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ex8-Nx-bFY"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3r-rG-JMK">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3r-rG-JMK">
                             <rect key="frame" x="30" y="792" width="235" height="40"/>
                             <color key="backgroundColor" red="0.97254901959999995" green="0.52549019610000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -205,7 +204,6 @@
                             </state>
                         </button>
                     </subviews>
-                    <viewLayoutGuide key="safeArea" id="qGH-cd-7Rr"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="VPG-TT-6JI" firstAttribute="leading" secondItem="qGH-cd-7Rr" secondAttribute="leading" id="DLV-gP-ZhX"/>
@@ -221,13 +219,14 @@
                         <constraint firstItem="VPG-TT-6JI" firstAttribute="top" secondItem="REU-HC-DfD" secondAttribute="bottom" id="tjx-vt-PW7"/>
                         <constraint firstItem="BNL-xP-BoA" firstAttribute="top" secondItem="2TK-CH-NrI" secondAttribute="top" id="u35-Sd-to6"/>
                     </constraints>
+                    <viewLayoutGuide key="safeArea" id="qGH-cd-7Rr"/>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="P3r-rG-JMK" secondAttribute="bottom" constant="30" id="Iup-HG-3kj"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="aAccountNameLabel" destination="e7r-Dg-nc4" id="q8x-wg-lsc"/>
                 <outlet property="aCloseButton" destination="BNL-xP-BoA" id="XPt-f6-0Y1"/>
@@ -239,6 +238,7 @@
                 <outlet property="emailIdLabel" destination="jE1-x1-7BS" id="UrF-l7-iHp"/>
                 <outlet property="generValueLabel" destination="wH2-c0-jwU" id="bp6-dY-SUI"/>
                 <outlet property="idNumberLabel" destination="FRF-lE-hSf" id="FhM-lP-Njq"/>
+                <outlet property="menuHeightConstraint" destination="aJ9-Wg-UKI" id="uku-UG-LKh"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
         </view>

@@ -19,6 +19,7 @@ class DrawerView: UIView {
     @IBOutlet weak var addressLine1: UILabel!
     @IBOutlet weak var generValueLabel: UILabel!
     
+    @IBOutlet weak var menuHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var idNumberLabel: UILabel!
     @IBOutlet weak var emailIdLabel: UILabel!
     @IBOutlet weak var dateOfBirthLabel: UILabel!
@@ -45,6 +46,7 @@ class DrawerView: UIView {
         aTableView.register(UINib(nibName: DrawerTableViewCell.identifier(), bundle: nil), forCellReuseIdentifier: DrawerTableViewCell.identifier())
         // aEditProfileButton.setCornerRadiusButton(value: 15)
         aProfilePicImageView.setCornerRadiusImageView(value: 42.5)
+        menuHeightConstraint.constant = 375
     }
     
     func setCloseButtonBackgroundColor(color: UIColor) {
@@ -118,7 +120,7 @@ extension DrawerView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
+        return 60
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

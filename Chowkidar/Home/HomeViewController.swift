@@ -259,12 +259,19 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
         openViewController(controller: MaintenanceViewController.self, storyBoard: .mainStoryBoard) { (vc) in
             
         }}
-        else {
+        else  if(indexPath.row == 1) {
             openViewController(controller: ServicesViewController.self, storyBoard: .mainStoryBoard) { (vc) in
                 
             }
             
         }
+        
+        else  if(indexPath.row == 2) {
+                 openViewController(controller: BookHallsViewController.self, storyBoard: .mainStoryBoard) { (vc) in
+                     
+                 }
+                 
+             }
     }
     
 }
